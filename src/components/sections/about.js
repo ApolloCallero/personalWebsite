@@ -125,7 +125,7 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['JavaScript (ES6+)', 'TypeScript', 'React', 'Eleventy', 'Node.js', 'WordPress'];
+  const skills = ['Python', 'TypeScript', 'React', 'Selenium', 'Sklearn','Firebase'];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -133,47 +133,38 @@ const About = () => {
 
       <div className="inner">
         <StyledText>
-          <div>
+        <div>
             <p>
-              Hello! My name is Brittany and I enjoy creating things that live on the internet. My
-              interest in web development started back in 2012 when I decided to try editing custom
-              Tumblr themes — turns out hacking together a custom reblog button taught me a lot
-              about HTML &amp; CSS!
+              Hello! My name is Apollo and I like building cool things! My
+              passion for software started back in 2019 when I took a robotics class where
+              we built lego robots and had them beat each other up.
             </p>
 
             <p>
               Fast-forward to today, and I’ve had the privilege of working at{' '}
-              <a href="https://us.mullenlowe.com/">an advertising agency</a>,{' '}
-              <a href="https://starry.com/">a start-up</a>,{' '}
-              <a href="https://www.apple.com/">a huge corporation</a>, and{' '}
-              <a href="https://scout.camd.northeastern.edu/">a student-led design studio</a>. My
-              main focus these days is building accessible, inclusive products and digital
-              experiences at <a href="https://upstatement.com/">Upstatement</a> for a variety of
-              clients.
+              <a href="https://mdi.georgetown.edu/research-experiences-for-undergraduates/">Georgetown University</a>,{' '}
+              <a href="https://stealthbits.com/">a security company</a>,{' '}
+              <a href="https://www.txst.edu/">Texas State University</a>, and{' '}
+              <a href="https://wsu.edu/"> helped students learn to code as a Teacher Assistant</a>.
+              The majority of my proffesional experience has been in the Data Science realm.
             </p>
-
             <p>
-              I also recently{' '}
-              <a href="https://www.newline.co/courses/build-a-spotify-connected-app">
-                launched a course
-              </a>{' '}
-              that covers everything you need to build a web app with the Spotify API using Node
-              &amp; React.
+            I Also ✨Graduated✨ with my BS in Computer Science from Washington State University this month. 
             </p>
-
-            <p>Here are a few technologies I’ve been working with recently:</p>
+            <p>Here are a few technologies I've been working with recently:</p>
           </div>
 
           <ul className="skills-list">
             {skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}
           </ul>
+
         </StyledText>
 
         <StyledPic>
           <div className="wrapper">
             <StaticImage
               className="img"
-              src="../../images/me.jpg"
+              src="../../images/me.webp"
               width={500}
               quality={95}
               formats={['AUTO', 'WEBP', 'AVIF']}

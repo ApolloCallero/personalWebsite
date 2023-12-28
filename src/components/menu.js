@@ -46,7 +46,7 @@ const StyledHamburgerButton = styled.button`
     width: var(--hamburger-width);
     height: 2px;
     border-radius: var(--border-radius);
-    background-color: var(--green);
+    background-color: var(--blue);
     transition-duration: 0.22s;
     transition-property: transform;
     transition-delay: ${props => (props.menuOpen ? `0.12s` : `0s`)};
@@ -265,6 +265,7 @@ const Menu = () => {
                 ))}
               </ol>
             )}
+            <a>aaaaaaa</a>
 
             <a href="/resume.pdf" className="resume-link">
               Resume
