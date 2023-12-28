@@ -20,7 +20,8 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "prepare": "husky install",
-    "lint-staged": "lint-staged"
+    "lint-staged": "lint-staged",
+     "deploy": "gh-pages -b master -d build"
   },
   "lint-staged": {
     "*.{js,css,json,md}": [
@@ -30,6 +31,7 @@
       "eslint --fix"
     ]
   },
+  "homepage": "https://apollocallero.github.io",
   "dependencies": {
     "animejs": "^3.1.0",
     "babel-plugin-styled-components": "^1.12.0",
