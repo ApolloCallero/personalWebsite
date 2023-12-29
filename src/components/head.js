@@ -34,14 +34,14 @@ const Head = ({ title, description, image }) => {
   } = site.siteMetadata;
 
   const seo = {
-    title: title || defaultTitle,
+    title:"Apollo's site",
     description: description || defaultDescription,
     image: `${siteUrl}${image || defaultImage}`,
     url: `${siteUrl}${pathname}`,
   };
 
   return (
-    <Helmet title={title} defaultTitle={seo.title} titleTemplate={`%s | ${defaultTitle}`}>
+    <Helmet defaultTitle={seo.title} titleTemplate={`%s | ${defaultTitle}`}>
       <html lang="en" />
 
       <meta name="description" content={seo.description} />
